@@ -3,10 +3,29 @@
 
 __metadata:
   version: 8
-  cacheKey: 10c0
+  cacheKey: 10
 
-"yarn-audit@workspace:.":
+"json5@npm:0.5.1":
+  version: 0.5.1
+  resolution: "json5@npm:0.5.1"
+  bin:
+    json5: lib/cli.js
+  checksum: 10/1d95c1cb98d884b4620321b5361062ed0febcef78576687beec014382e51ee07a8c8118421bd327e55080e8ccc4c394f4940ee5d8aedc050b8df7b7a261c9add
+  languageName: node
+  linkType: hard
+
+"yarn-audit-json-issue@workspace:.":
   version: 0.0.0-use.local
-  resolution: "yarn-audit@workspace:."
+  resolution: "yarn-audit-json-issue@workspace:."
+  dependencies:
+    json5: "npm:0.5.1"
+    zod: "npm:3.22.2"
   languageName: unknown
   linkType: soft
+
+"zod@npm:3.22.2":
+  version: 3.22.2
+  resolution: "zod@npm:3.22.2"
+  checksum: 10/bb39da97974b78c975bd1cbeb1a04ddc8ce69ac3100151e6ad1ee4763a8b3322fdbbcd98cd4b6bc2b40fb4d5bb86920f7c33515f430ca6aa439ce524a9c315c2
+  languageName: node
+  linkType: hard
